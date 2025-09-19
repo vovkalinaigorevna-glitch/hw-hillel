@@ -420,3 +420,7 @@ background-color: #245e2f;
     opacity: 50%;
     gap: 12px;
 }
+
+.blog-item-link:hover{
+    opacity: 80%;
+}

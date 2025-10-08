@@ -54,6 +54,7 @@ body{
     font-weight: 400;
     color: #3D3D3D;
     padding-bottom: 25px;
+    
 }
 .nav-link-text:hover{
     font-size: 16px;
@@ -71,6 +72,7 @@ margin: 30px 0 12px 0;
 padding-bottom: 18px;
 
 border-bottom: 0.3px solid #9DCBA6;
+
 }
 .nav-list{
     position: relative;
@@ -81,6 +83,7 @@ border-bottom: 0.3px solid #9DCBA6;
     padding-top: 37px;
     left: 127px;
     display: none;
+    
 }
 .sub-nav-link-text{
     color: #3D3D3D;
@@ -94,15 +97,18 @@ border-bottom: 0.3px solid #9DCBA6;
     padding-bottom: 8px;
     width: 188px;
     padding-right: 17px;
-}
+    
+    }
 .sub-nav-link:hover{
     background-color: #c8d7ca;
     padding-right: 12px;
     transition: opacity 0.7s ease;
+
 }
 .nav-link:hover .sub-nav-list-wrapper {
   display: block;
   transition: opacity 0.7s ease;
+  
 }
 
 .nav-link:hover .nav-link-text {
@@ -117,7 +123,6 @@ border-bottom: 0.3px solid #9DCBA6;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 

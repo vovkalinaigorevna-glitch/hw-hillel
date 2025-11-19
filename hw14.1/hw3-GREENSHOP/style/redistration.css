@@ -1,0 +1,237 @@
+@font-face{
+    font-family: cerapro;
+    src: url(fonts/cerapro-bold.otf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: cerapro;
+    src: url(fonts/cerapro-medium.otf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: cerapro;
+    src: url(fonts/cerapro-reguler.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: cerapro;
+    src: url(fonts/cerapro-thin.otf) format('opentype');
+    font-weight: 250;
+    font-style: normal;
+}
+
+
+
+
+
+
+.black {
+        font-family: 'CeraPro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.black a {
+    color: #3D3D3D;
+    text-decoration: none;
+}
+.black:hover{
+    opacity: 50%;
+    transition-duration: 0.7s;
+
+}
+.green {
+        font-family: 'CeraPro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.green a {
+color: #46A358;
+text-decoration: none;
+}
+.green:hover{
+    opacity: 50%;
+    transition-duration: 0.7s;
+}
+.line {
+font-family: 'CeraPro', sans-serif;
+    font-weight: 250;
+    font-size: 16px; 
+    color: #3D3D3D;
+       
+}
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+body{
+    max-width: 800px;
+    width: 800px;
+    margin: 100px auto; 
+    position: relative;
+    align-items: center;
+}
+.cross{
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  cursor: pointer
+}
+.text_help{
+    font-family:'CeraPro', sans-serif;
+    font-weight: 240;
+    font-size: 16px;
+    color: #3D3D3D;
+    margin-bottom: 14px;
+    
+}
+input{
+    height: 40px
+    width: 300px;
+    padding: 14px;
+    font-family: 'CeraPro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3D3D3D;
+    border: 1px solid #EAEAEA;
+    border-radius: 16px;  
+}
+.form-input::placeholder {
+    color: #A5A5A5;
+    font-family: 'CeraPro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 300px;
+}
+.form_register {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    
+
+}
+.input-password{
+    position: relative;
+}
+.img-input-password{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;  
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.submit-button{
+    color: #FFFFFF;
+    background-color: #46A358;
+    border-radius: 16px;
+    width: 300px;
+    font-family: 'CeraPro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px;
+    height: 45px;
+    outline: #3D3D3D;
+    border: none;
+
+}
+.submit-button-link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.submit-button:hover{
+    background-color: #3a8749;
+    transition-duration: 0.7s;
+}
+input, button {
+    width: 300px;
+    box-sizing: border-box;
+}
+.register_with {
+    display: flex;
+    align-items: center;       
+    justify-content: center;   
+    gap: 6px;                  
+    margin: 30px 0;       
+
+}
+
+.register_with:hover{
+    opacity: 70%;
+    transition-duration: 0.7s;
+}
+.register_with p {
+    font-family: 'CeraPro', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: #3D3D3D;
+    margin: 0;             
+}
+.button-google{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #EAEAEA;
+    border-radius: 16px; 
+    background-color: #FFFFFF;
+    font-family: 'CeraPro', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #727272;
+    text-decoration: none;
+
+}
+.button-google:hover{
+    background-color: #D7EADB;
+    transition-duration: 0.7s;
+}
+.button-fb:hover{
+    background-color: #D7EADB;
+    transition-duration: 0.7s;
+}
+
+.button-fb{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #EAEAEA;
+    border-radius: 16px; 
+    background-color: #FFFFFF;
+    font-family: 'CeraPro', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #727272;
+    text-decoration: none;
+}
+.button-another-login{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.auth-card{
+    width: 300px;
+    margin: 100px auto;
+    position: relative;
+    padding: 20px;
+
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

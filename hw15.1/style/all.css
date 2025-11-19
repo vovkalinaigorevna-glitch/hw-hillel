@@ -1,0 +1,679 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Загальні налаштування */
+body{
+  color: #FFFFFF;
+}
+.gradient-wrapper{
+  background: linear-gradient(180deg, #323264 0%, #323264 60%, #643E72 100%);
+  background-attachment: fixed;
+  border-radius: 0px 0px 20px 20px;
+  align-content: center;
+} 
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 1320px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.container-max{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.h1{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.h3{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.h3-caps{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.h4{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.paragraph{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+/* ХЕДЕР */
+
+.header{
+    position: relatfiive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    z-index: 9999;
+}
+
+.header-right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 9999;
+}
+
+
+.header-right-side-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+
+
+/* ХЕДЕР -- ВЕРХНЯЯ */
+.header-nav-language-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav-language-list-link{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1px;
+
+}
+.header-nav-language-list-item{
+    padding: 5px 7px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.header-nav-language-list-item:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+.active-language{
+    padding: 5px 7px;
+    border-radius: 8px;
+    background-color: rgba(240, 20, 90, 1);    
+}
+
+.icon-facebook-header:hover{
+    color: rgba(240, 20, 90, 1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+/* ХЕДЕР -- МЕНЮ */
+.header-nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;    
+}
+.header-nav-list-link{
+  color: rgba(255, 255, 255, 1);
+  position: relative;           /* обязательно! */
+  text-decoration: none;
+  padding-bottom: 3px;          /* небольшой отступ снизу, чтобы линия не прилипала к буквам */
+  transition: color 0.35s ease; /* если хочешь, чтобы и текст менял цвет */
+
+}
+.header-nav-list-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 1);;
+  transition: left 0.4s ease, right 0.4s ease;
+}
+
+.header-nav-list-link:hover::after {
+  left: 0;
+  right: 0;
+}
+
+/* ГЛАВНЫЙ ЭКРАН */
+.main-screen{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.symbol-main-screen {
+  position: absolute;
+  top: -114px;
+  max-width: 697px;
+}
+.wrapper-main-screen-tittle{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 305px;
+    padding-top: 261px;
+
+}
+
+.main-screen-scroll-icon:hover{
+    color: rgba(240, 20, 90, 1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+
+}
+
+.symbol-main-screen {
+  clip-path: inset(0 100% 0 0);
+  animation: revealLeft 3s ease-in forwards;
+}
+
+@keyframes revealLeft {
+  to { clip-path: inset(0 0 0 0); }
+}
+
+
+
+/* СЛАЙДЕР */
+
+.achievement{
+    margin-bottom: 60px;
+}
+.achievement-wrapper{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.achievement-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.tittle-achievement-left-side label {
+  cursor: pointer;             /* Делает слово кликабельным */
+  display: block;
+  color: rgba(179, 179, 186, 1);
+  transition: 0.3s ease;
+}
+/* Подсветка выбранного слова */
+#t1:checked ~ .achievement-left-side label[for="t1"],
+#t2:checked ~ .achievement-left-side label[for="t2"],
+#t3:checked ~ .achievement-left-side label[for="t3"],
+#t4:checked ~ .achievement-left-side label[for="t4"] {
+    background: linear-gradient(90deg, rgba(239, 128, 128, 1), rgba(240, 20, 90, 1));
+    -webkit-background-clip: text;  /* важная штука для градиента */
+    -webkit-text-fill-color: transparent; /* делает текст прозрачным, виден градиент */
+}
+.tittle-achievement-left-side label:hover {
+    color: rgba(240, 20, 90, 1); /* светлее при наведении */
+}
+
+.expander{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 4px;
+    height: 303px;
+}
+
+.achievement-right-side{
+    display: flex;
+    flex-direction: column;
+    max-width: 581px;
+}
+/* --- ПРАВАЯ КОЛОНКА --- */
+.achievement-right-side > div {
+  opacity: 0;                /* полностью прозрачный */
+  transition: opacity 1s ease; /* плавное изменение */
+  position: absolute;        /* чтобы скрытые блоки не занимали место */
+  top: 0; left: 0;
+  width: 100%;
+  }
+/* ПОКАЗЫВАЕМ НУЖНЫЙ ТЕКСТ */
+/* Каждый блок описания связанный с выбранным radio */
+#t1:checked ~ .achievement-right-side .description-t1 {
+  display: block;
+  opacity: 1;                /* полностью видимый */
+  transition: opacity 1s ease;
+  position: relative;        /* возвращаем в поток */
+}
+#t2:checked ~ .achievement-right-side .description-t2 {
+  display: block;
+  opacity: 1;                /* полностью видимый */
+  transition: opacity 1s ease;
+  position: relative;        /* возвращаем в поток */
+}
+#t3:checked ~ .achievement-right-side .description-t3 {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s ease;
+  position: relative;        /* возвращаем в поток */
+}
+#t4:checked ~ .achievement-right-side .description-t4 {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s ease;
+  position: relative;        /* возвращаем в поток */
+}
+
+.description-text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.description-tittle-text{
+    margin-bottom: 30px;
+}
+
+
+/* --- Services --- */
+
+.margin-bottom-60{
+    margin-bottom: 60px;
+}
+.services-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.button-link{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: rgba(36, 163, 255, 1);
+    transition: color 0.3s ease;
+}
+.button-link:hover{
+    gap: 6px;
+    color: rgba(240, 20, 90, 1);
+    transition: color 0.3s ease;
+}
+.services-title{
+  background: linear-gradient(90deg, rgba(240, 20, 90, 1), rgba(239, 128, 128, 1));
+  -webkit-background-clip: text;   /* обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* делаем текст прозрачным, виден только градиент */
+}
+
+.services-item-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.services-item-block{
+    display: flex;
+    justify-content: space-between;
+}
+.services-item{
+    /* display: block; */
+    max-width: 400px;
+}
+.services-item-image{
+    margin-bottom: 30px;
+}
+.services-item-tittle{
+    margin-bottom: 15px;
+    color: rgba(36, 163, 255, 1);
+}
+   /* .bg-decorate{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+   } */
+.services-line-decor-1{
+  background-color: rgba(202, 202, 219, 1);
+  height: 10px;
+  border-radius: 0px 0px 10px 10px;
+  max-width: 1400px;
+}
+.services-line-decor-2{
+  background-color: rgba(231, 231, 242, 1);
+  height: 10px;
+  border-radius: 0px 0px 10px 10px;
+  max-width: 1360px;
+  margin-bottom: 60px;
+}
+
+
+
+/* --- СЛАЙДЕР --- */
+
+.team{
+    margin-bottom: 60px;
+}
+.team-slide-tittle{
+    background: linear-gradient(90deg, rgba(240, 20, 90, 1), rgba(239, 128, 128, 1));
+  -webkit-background-clip: text;   /* обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* делаем текст прозрачным, виден только градиент */
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.team-slide-name-text{
+    color: rgba(179, 179, 186, 1);
+    margin-bottom: 6px;
+}
+.team-slide-text{
+    color:rgba(179, 179, 186, 1) ;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.slide{
+    display: flex;
+}
+.slide-right-side{
+    padding: 30px 30px;
+    background-color: #F5F5FA;
+    align-content: center;
+}
+
+
+
+/* Основной контейнер слайдера */
+.team-wrapper {
+  position: relative;
+  width: 100%;
+
+  margin: 0 auto;
+  overflow: hidden; /* скрываем все, что выходит за пределы */
+}
+
+/* Контейнер слайдов */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;               /* горизонтальное расположение слайдов */
+  width: 300%;                 /* 3 слайда по 100% */
+  transition: transform 0.5s ease; /* плавное переключение */
+}
+
+/* Одиночный слайд */
+.slide {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  flex-shrink: 0;              /* не сжимается */
+  display: flex;
+  align-items: center;
+}
+
+/* Правая часть слайда */
+.slide-right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  max-width: 860px;
+  height: 344px;
+ 
+}
+
+/* Скрываем радио-кнопки */
+.team-wrapper input[type="radio"] {
+  display: none;
+}
+
+/* Перемещение слайдов при выборе радио */
+#slide1-team:checked ~ .carousel-wrapper .carousel-slides {
+  transform: translateX(0%);
+}
+#slide2-team:checked ~ .carousel-wrapper .carousel-slides {
+  transform: translateX(-100%);
+}
+#slide3-team:checked ~ .carousel-wrapper .carousel-slides {
+  transform: translateX(-200%);
+}
+
+/* Навигационные точки */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.carousel-nav label {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(36, 163, 255, 0.2);
+  cursor: pointer;
+  transition: background 1s ease;
+}
+
+/* Подсветка активной точки */
+#slide1-team:checked ~ .carousel-nav label[for="slide1-team"],
+#slide2-team:checked ~ .carousel-nav label[for="slide2-team"],
+#slide3-team:checked ~ .carousel-nav label[for="slide3-team"] {
+  background: rgba(36, 163, 255, 1);
+}
+
+/* Кнопка внутри слайда */
+.button-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(36, 163, 255, 1);
+  text-decoration: none;
+  transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.button-link:hover {
+  color: #f0145a;
+  gap: 8px; /* движение стрелки */
+}
+
+/* Стрелка наследует цвет кнопки */
+.icon-arrow-right path {
+  stroke: currentColor;
+}
+
+
+
+.partner-tittle{
+color: rgba(50, 50, 100, 1);
+margin-bottom: 30px;
+}
+.partner-wrapper-item{
+margin: 0px auto;
+display: flex;
+justify-content: center;
+}
+.partner-wrapper-item-logo:hover{
+  opacity: 80%;
+  transition-duration: 0.7s;
+
+}
+.partner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.partner-wrapper{
+  border-radius: 12px;
+}
+
+
+
+/* Publications */
+
+.publication{
+  padding-top: 30px;
+  background-color: rgba(245, 245, 250, 1);
+  
+}
+
+.publications-item-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.publications-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 420px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+}
+.publications-item-img{
+  margin-bottom: 30px;
+}
+.publications-item-link:hover .publications-item-img{
+  opacity: 80%;
+  transition-duration: 0.7s;
+}
+.publications-item-tittle{
+  color: rgba(36, 163, 255, 1);
+  margin-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.publications-item-link:hover .publications-item-tittle{
+  color:#f0145a;
+  transition-duration: 0.7s;
+}
+.publications-item-date{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(179, 179, 186, 1);
+  margin-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.publications-item-line{
+  height: 4px;
+  max-width: 360px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  background-color: rgba(230, 230, 240, 1);
+}
+.publications-item-text{
+color: rgba(0, 0, 0, 1);
+margin-bottom: 30px;
+padding-left: 30px;
+padding-right: 30px;
+
+}
+
+
+/* FOOTER */
+
+.footer{
+  background-color: rgba(245, 245, 250, 1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color:rgba(179, 179, 186, 1);
+}
+.footer-line{
+  height: 2px;
+  background-color: rgba(230, 230, 240, 1);
+  margin-bottom: 30px;
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px ;
+}
+.footer-top-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-text-location{
+  color:rgba(50, 50, 100, 1) ;
+}
+.footer-location-link{
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: rgba(36, 163, 255, 1);
+}
+.footer-location-link:hover{
+color: rgba(240, 20, 90, 1);
+transition-duration: 0.7s;
+}
+.footer-bottom{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 10px;  
+}
+.footer-phone-link{
+  color: rgba(70, 70, 110, 1);
+}
+.footer-email-link{
+  color: rgba(36, 163, 255, 1);
+}
+.footer-email-link:hover{
+  color: rgba(240, 20, 90, 1);
+  transition-duration: 0.7s;
+}
+.link-icon-facebook-footer{
+  color:rgba(36, 163, 255, 1);
+}
+
+
